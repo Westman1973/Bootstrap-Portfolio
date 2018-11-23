@@ -10,14 +10,14 @@
 <body>
 
   <!-- Navbar (from Bootstrap) -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Sandy</a>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sandy Westman</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="nav justify-content-end">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
         </li>
@@ -27,46 +27,109 @@
         <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
+       
+        
+      </ul>
+    </div>
+  </nav>
   
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
+  <div id="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+                  
+  <h1>Portfolio</h1>
 
-      <div class="work">
+    </div>
+    <br>
+ 
+  <div class="row">
+      <div class="col-lg">
         <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
         <h3>Word Guess</h3>
       </div>
-      <div class="work">
+
+      <div class="col-lg">
         <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
         <h3>RPG Game</h3>
+        </div>
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
 
+<div class="row">
+      <div class="col-lg">
+        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
         <h3>Trivia Game</h3>
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
 
+     <div class="col-lg">
+        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
         <h3>Rutgers Info Widget</h3>
       </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
+    </div>
 
+    <div class="row">
+    <div class="col-lg">
+        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
         <h3>Rock Paper Scissors</h3>
       </div>
-
+    </div>
+  
     </section>
 
   </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy;
-    </div>
-  </footer>
+  <div class="footer">
+      <p> @Copyright </p>
+</div>
+  
+</footer>
 </body>
 
 </html>
+
+<style>
+
+
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #dddddd;
+}
+.row img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+
+}
+
+  .row h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+
+  }
+
+  .row {
+   margin: 20px 0 25px;
+   }
+
+   .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #666666;
+      color: white;
+      text-align: center;
+  }
+
+</style>
