@@ -9,14 +9,14 @@
 
 <body>
 <!-- Navbar (from Bootstrap) -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Sandy</a>
+<nav class="navbar navbar-expand-md bg-light" style="background-color: rgb(103, 151, 151);">
+    <a class="navbar-brand">Sandy Westman</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="nav justify-content-end">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
         </li>
@@ -26,39 +26,78 @@
         <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-
+       
+        
+      </ul>
+    </div>
+  </nav>
  
   <div id="main-container" class="container">
-    <section class="main-section">
       <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
+          <div class="form-group">
+          <label for="name" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message" class="col-sm-2 control-label">Message</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"></textarea>
+          </div>
+        </div>
+      
+        <div class="form-group">
+          <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Submit" class="btn btn-primary">
+          </div>
+        </div>
+      
+            
+          </div>
+          </div>
+      </div>
       </form>
-
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+      
+      <div class="footer">
+          <p> @Copyright </p>
     </div>
-  </footer>
-</body>
+      
+    </footer>
+      
+      
+      </body>
+      </html>
+      
+      <style>
+      
+      
+      .container {
+        width: 100%;
+        max-width: 960px;
+        padding-top: 40px;
+        padding: 50px;
+        margin-top:40px;
+        margin-left: 200px;
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        clear: both;
+      }
 
-</html>
+      .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #666666;
+      color: white;
+      text-align: center;
+  }
+      
+      </style>
